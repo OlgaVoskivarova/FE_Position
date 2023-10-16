@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+}
+.red{
+    background-color: red;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+
+}
+.green{
+    background-color: green;
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    z-index: 1;
+    transition: 1s;
+    
+}
+/* .green:hover{
+    transform: scale(1.5);
+    /* свойство для плавного увеличения элемента. псевдокласс hover и transform:scale(в скобках значение на которое элемент будет увеличиваться.
+    также в свойствах для этого элемента нужно указать значение transition - для предания плавности изменениям и указать время за которое эти изменения будут происходить) */
+/* }  */
+.green:hover{
+    transform: rotate(-45deg) scale(1.5);
+    /* width: 300px;
+    height: 300px; */
+}
+
+.blue{
+    background-color: blue;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+}
